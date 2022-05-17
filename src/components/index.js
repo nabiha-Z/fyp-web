@@ -27,7 +27,7 @@ export default function Index() {
             {/* <!-- home section starts --> */}
             <section className="home" id="home">
                 <div className="image">
-                    <img src="/home-img.svg" alt="" />
+                    <img src="images/home-img.svg" alt="" />
                 </div>
                 <div className="content">
                     <h3>Stay safe! Stay healthy!</h3>
@@ -49,28 +49,28 @@ export default function Index() {
                         <i className="fas fa-notes-medical"></i>
                         <h3>free checkup</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</p>
-                        <Link to="/AppointmentForm" className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
+                        <Link to="/AppointmentForm" state={{category:'Free Checkup'}} className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
                     </div>
 
                     <div className="box" id="medicine">
                         <i className="fas fa-pills"></i>
                         <h3>medicines</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</p>
-                        <Link to="/AppointmentForm" className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
+                        <Link to="/AppointmentForm" state={{category:'Medication'}} className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
                     </div>
 
                     <div className="box" id="therapy">
                         <i className="fas fa-heartbeat"></i>
                         <h3>physio therapy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</p>
-                        <Link to="/AppointmentForm" className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
+                        <Link to="/AppointmentForm" state={{category:'Physio Therapy'}} className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
                     </div>
 
                     <div className="box" id="care">
                         <i className="fa fa-hospital"></i>
                         <h3>total care</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tenetur!</p>
-                        <Link to="/AppointmentForm" className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
+                        <Link to="/AppointmentForm" state={{category:'Total Care'}} className="btn">learn more <span className="fas fa-chevron-right"></span></Link>
                     </div>
 
                 </div>
@@ -84,7 +84,7 @@ export default function Index() {
                 <h1 className="heading"><span>about</span>us</h1>
                 <div className="row">
                     <div className="image">
-                        <img src="../image/about-img.svg" alt="" />
+                        <img src="images/about-img.svg" alt="" />
                     </div>
                     <div className="content">
                         <h3>we take care of your healthy life</h3>
@@ -107,7 +107,18 @@ export default function Index() {
                 <div className="box-container">
 
                     <div className="box">
-                        <img src="../image/doc-1.jpg" alt="" />
+                        <img src="images/doc-1.jpg" alt="" />
+                        <h3>john deo</h3>
+                        <span>expert doctor</span>
+                        <div className="share">
+                            <Link to="#" ><i className="fa fa-eye"/></Link>
+                            <Link to="#" className="fas fa-edit"></Link>
+                            <Link to="#" className="fa fa-trash"></Link>
+                        </div>
+                    </div>
+
+                    <div className="box">
+                        <img src="images/doc-2.jpg" alt="" />
                         <h3>john deo</h3>
                         <span>expert doctor</span>
                         <div className="share">
@@ -118,18 +129,7 @@ export default function Index() {
                     </div>
 
                     <div className="box">
-                        <img src="../image/doc-2.jpg" alt="" />
-                        <h3>john deo</h3>
-                        <span>expert doctor</span>
-                        <div className="share">
-                            <Link to="#" className="fa fa-eye"></Link>
-                            <Link to="#" className="fas fa-edit"></Link>
-                            <Link to="#" className="fa fa-trash"></Link>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <img src="../image/doc-3.jpg" alt="" />
+                        <img src="images/doc-3.jpg" alt="" />
                         <h3>john deo</h3>
                         <span>expert doctor</span>
                         <div className="share">
@@ -154,7 +154,7 @@ export default function Index() {
                 <div className="box-container">
 
                     <div className="box">
-                        <img src="../image/doc-4.jpg" alt="" />
+                        <img src="images/doc-4.jpg" alt="" />
                         <h3>john deo</h3>
                         <span>patient</span>
                         <div className="share">
@@ -165,7 +165,7 @@ export default function Index() {
                     </div>
 
                     <div className="box">
-                        <img src="../image/doc-5.jpg" alt="" />
+                        <img src="images/doc-5.jpg" alt="" />
                         <h3>john deo</h3>
                         <span>patient</span>
                         <div className="share">
@@ -176,7 +176,7 @@ export default function Index() {
                     </div>
 
                     <div className="box">
-                        <img src="../image/doc-6.jpg" alt="" />
+                        <img src="images/doc-6.jpg" alt="" />
                         <h3>john deo</h3>
                         <span>patient</span>
                         <div className="share">
